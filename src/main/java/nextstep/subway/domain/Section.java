@@ -23,7 +23,6 @@ public class Section {
     private int distance;
 
     public Section() {
-
     }
 
     public Section(Line line, Station upStation, Station downStation, int distance) {
@@ -52,4 +51,9 @@ public class Section {
     public int getDistance() {
         return distance;
     }
+
+    public boolean isDownStation(Long stationId) {
+        return this.downStation.getId().equals(stationId);
+    }
+
 }
