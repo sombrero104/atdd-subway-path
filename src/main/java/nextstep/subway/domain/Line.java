@@ -45,8 +45,6 @@ public class Line extends BaseEntity {
     }
 
     public void registSection(Section section) {
-        sections.verifyNewUpStationIsDownStation(section);
-        sections.verifyStationAlreadyRegistered(section);
         sections.addSection(section);
     }
 
